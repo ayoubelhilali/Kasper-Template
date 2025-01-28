@@ -930,6 +930,7 @@ header nav ul li a:hover {
     border-left: none;
     text-transform: uppercase;
     transition: .5s ease;
+    cursor: pointer;
 }
 .subscribe .container form #subscribe-btn:hover{
     background-color: transparent;
@@ -949,4 +950,74 @@ header nav ul li a:hover {
 }
 
 /* subscribe End  */
+/* Contact Start  */
+.contact{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.contact .content{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 767px) {
+    .contact .content {
+        flex-direction: column;
+    }
+    .contact .content .info {
+        text-align: center;
+
+    }
+}
+.contact .content form{
+    flex-basis: 70%;
+}
+.contact .content form .main-input{
+    padding: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.contact .content form textarea.main-input{
+    height: 150px;
+}
+.contact .content form .send-btn{
+    display: block;
+    background-color: var(--main-color);
+    padding: 20px;
+    margin-left: auto;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.contact .content form .send-btn:hover{
+    background-color: transparent;
+    color:black;
+    border: 1px solid var(--main-color);
+}
+.contact .content .info{
+    flex-basis: 25%;
+
+}
+.contact .content .info h4{
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.contact .content .info h4:nth-of-type(2) {
+    margin-top: 100px;
+}
+.contact .content .info .phone{
+    color: #777;
+    display: block;
+    margin-bottom: 10px;
+}
+.contact .content .info address{
+    color: #777;
+    line-height: 2;
+}
+/* Contact End  */
 
