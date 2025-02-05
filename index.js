@@ -1,3 +1,13 @@
+
+// ----------------- Loader Start ------------------
+window.addEventListener("load", () => {
+    let loader = document.querySelector(".loader");
+    loader.classList.add("loader-hidden");
+    loader.addEventListener("transitionend", () => {
+        document.body.removeChild("loader");
+    })
+})
+// ----------------- Loader End ------------------
 // ----------------- Header Start ------------------
 let ToggleMenu = document.querySelector("header nav .toggle-menu");
 let HeaderMenu = document.querySelector("header nav ul");
