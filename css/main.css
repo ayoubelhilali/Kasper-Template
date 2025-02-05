@@ -1238,10 +1238,8 @@ header nav ul li a:hover {
 }
 
 .loader .logo {
-    width: 110px;
-    height: 55px;
-    margin-left: 45px;
-
+    width: 90px;
+    height: 90px;
 }
 
 .loader::before {
@@ -1256,6 +1254,16 @@ header nav ul li a:hover {
     border-radius: 50%;
     position: absolute;
     animation: spin 0.75s linear infinite;
+}
+@media (max-width: 768px) {
+    .loader .logo{
+        width: 60px;
+        height: 60px;
+    }
+    .loader::before{
+        width: 70px;
+        height: 70px;
+    }
 }
 
 @keyframes spin {
